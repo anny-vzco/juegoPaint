@@ -1,3 +1,12 @@
+"""
+Juego: Paint
+Programador 1: Annya Paulina Verduzco Meza / A01650668
+
+Programador 2: Diego Isunza Garciacano / A01652067
+
+Fecha: 10 / mayo / 2022
+"""
+
 from turtle import *
 from freegames import vector
 
@@ -23,7 +32,7 @@ def square(start, end):
 
 def circle(start, end):
     "Draw circle from start to end."
-    pass  # TODO
+    pass   
 
 def rectangle(start, end):
     "Creacion del rectangulo por Diego Isunza"
@@ -83,6 +92,7 @@ onkey(lambda: color('white'), 'W')
 onkey(lambda: color('green'), 'G')
 onkey(lambda: color('blue'), 'B')
 onkey(lambda: color('red'), 'R')
+onkey(lambda: color('pink'), 'P')#Agrega color rosa Annya Verduzco
 onkey(lambda: store('shape', line), 'l')
 onkey(lambda: store('shape', square), 's')
 onkey(lambda: store('shape', circle), 'c')
