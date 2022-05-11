@@ -32,14 +32,18 @@ def square(start, end):
 
 def circle(start, end):
     "Agrega circulo por Annya Verduzco"
-    pi = 3.141592
-    diametro = end.x - start.x
-    radio = diametro / 2
-    circunferencia = 2 * pi * radio
-    arco = circunferencia / 360
     up()
     goto(start.x, start.y)
+    right(90)
     down()
+    begin_fill()
+
+    for count in range(360):
+        forward((end.x - start.x)/120)
+        left(1)
+
+    speed(0)
+    end_fill()
     begin_fill()
 
 def rectangle(start, end):
